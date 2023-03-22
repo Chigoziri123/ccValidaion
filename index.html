@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container" >
+        <div class="column-left">
+            <div>
+                <div id="logo">
+                    <img src="assets/BB_logo-removebg-preview.png" alt="bank emblem">
+                    <h1 id="bank">Berkley's Bank</h1>
+                </div> 
+                <h2>Payment Portal</h2>
+            </div>
+
+            <div>
+                <label for="">Card Number:</label>
+                <input type="number" id="ccnum" placeholder="XXXX-XXXX-XXXX-XXXX">
+            </div>
+        
+            <div>
+                <label for="">Expiry Date:</label>
+                <input type="date">
+            </div>
+        
+            <div>
+                <label for="cvv_input">CVV:</label>
+                <input type="number" placeholder="123">
+            </div>
+
+            <div>
+                <label for="pin_number">PIN:</label>
+                <input type="number" placeholder="xxxx">
+            </div>
+
+        </div>
+        
+        <div class="columnRight">
+            <h3>Accepted Cards</h3> 
+            <div id="containerCards">
+                <img src="assets/Master_Card_png-removebg-preview.png" alt="mastercard_logo">
+                <img src="assets/Verve_png-removebg-preview.png" alt="vervecard_logo">
+                <img src="assets/Visa_card_png-removebg-preview.png" alt="visacard_logo">
+            </div>
+        </div>
+    </section>
+
+        <div>
+            <button type="submit" id="btnbtn" onclick="ccCheck()">Make Payment</button>
+        </div>
+    <script src="./app.js"></script>
+</body>
+</html>
